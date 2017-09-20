@@ -98,7 +98,7 @@ done
 [ -e ${PREFIX}.common.accnos ] && rm ${PREFIX}.common.accnos
 echo "Rename and trim"
 tornado_rename_ids.py --trim_r1 $R1_TRIM --trim_r2 $R2_TRIM $PREFIX *R1.trim.fasta
-#remove empty lines from accnos file
+#remove empty lines from accnos file 
 sed -i '' '/^$/d' ${PREFIX}.common.accnos
 #check newly created files
 isitthere ${PREFIX}.groups
